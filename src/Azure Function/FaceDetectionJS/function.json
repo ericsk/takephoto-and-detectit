@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "photo",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "input/{name}",
+      "connection": "affacedetecta8e7_STORAGE",
+      "dataType": "binary"
+    },
+    {
+      "type": "table",
+      "name": "outputTable",
+      "tableName": "detection",
+      "connection": "affacedetecta8e7_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
