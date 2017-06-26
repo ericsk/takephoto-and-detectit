@@ -7,7 +7,7 @@ const FACEAPI_KEY = "YOUR_FACE_API_KEY";
 module.exports = function (context, photo) {
 
     let postOpt = {
-        url: FACEAPI_URL + "?returnFaceAttributes=age,gender",
+        url: FACEAPI_URL + "/detect?returnFaceAttributes=age,gender",
         body: photo,
         method: 'POST',
         headers: {
